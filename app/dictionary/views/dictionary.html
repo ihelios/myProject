@@ -1,0 +1,18 @@
+<div class="main">
+    <form action="">
+        <br>
+        <input type="text" name="word" ng-model="search">
+        <input type="submit" value="search">
+    </form>
+
+    <table>
+        <thead>
+            <th>Word</th>
+            <th>Meaning</th>
+        </thead>
+        <tbody class="result" ng-repeat="word in words|filter:search">
+                <td>{{word.word}}</td>
+                <td>{{word.meaning}}</td>
+        </tbody>
+    </table>
+</div>

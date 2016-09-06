@@ -1,0 +1,67 @@
+.todo_container{
+	position: relative;
+	width: 400px;
+	min-height: auto;
+	height: auto;
+	overflow: hidden;
+	margin: 10px;
+	display: inline-block;
+	border: 1px solid #909090;
+}
+
+header{
+	font-size: 16px;
+	margin: 10px;
+	text-align: center;
+}
+
+.todoInput{
+	position: relative;
+	width: 360px;
+	margin: 10px;
+	
+	font-size : 14px; 
+	text-align: center;
+}
+
+.todoInput input{
+	padding: 10px;
+	text-align: center;
+}
+
+li.tasks{
+	position: relative;
+	margin: 10px 10px 10px 10px;
+	padding:0;
+	list-style-type:none;
+	float: left;
+	border-bottom:1px solid #909;
+	text-align: left;
+
+}
+.delete_icon{
+	float: right;
+}
+
+.tasklen{
+	margin:10px;
+	float:left;
+}
+.remove{
+	margin: 10px;
+	float: right;
+}
+
+.clear{
+	margin: 10px 10px;
+	float: right;
+	position: relative;
+}
+div.message{
+	position: relative;
+	width: 360px;
+	margin: 20px;
+	padding: 10px; 
+	font-size: 14px;
+	border: 1px solid #090909;
+}

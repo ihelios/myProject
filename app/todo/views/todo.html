@@ -1,0 +1,22 @@
+<div class="todo_container">
+    <header>
+        <h1> TODO APP </h1></header>
+    <div class="todoInput">
+        <form ng-submit="addTask()">
+            <input type="text" ng-model="todoInput" placeholder="List your tasks" size="30">
+            <!-- <input type="submit" class="btn-xs btn-primary" id="submit-button"> -->
+        </form>
+    </div>
+    <li class="tasks col-sm-11" ng-repeat="task in tasks">
+        <input type="checkbox" ng-model="task.done">
+        <span click-to-edit="task.todoText">{{task.todoText}}</span>
+        <span class="delete_icon glyphicon glyphicon-remove" ng-click="deleteTask($index)"></span>
+    </li>
+    <div class="message" ng-hide="tasks.length">No tasks to display</div>
+	<div>
+		<span class="tasklen" ng-hide="ifChecked()"> {{tasks.length}} task(s)  pending</span>
+		<span class="tasklen" ng-show="ifChecked()"> {{taskLength}} task(s)  selected</span>
+		<button class="btn-xs btn-primary remove" ng-show="ifChecked()" ng-click="removeSelected()"> Remove Selected </button>
+    	<button class="btn-xs btn-primary clear" ng-show="tasks.length" ng-click="clearAll()"> Clear All </button>
+	</div>
+</div>

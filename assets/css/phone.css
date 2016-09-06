@@ -1,0 +1,14 @@
+body{
+	background-color: #ddd;
+}
+.contact{
+	background-color: #337ab7;
+	border: 1px solid yellow;
+	border-radius: 5px;
+	border-color:#2e6da4;
+	color: white;
+	padding:10px;
+	margin:26px;
+	font-size: 16px;
+	display: block;
+}
